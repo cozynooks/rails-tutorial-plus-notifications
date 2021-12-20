@@ -1,0 +1,6 @@
+- if @notifications.present?
+  - @notifications.each do |notification|
+    = render "#{notification.subject_type}", subject: notification
+- else
+  .text-center
+    | お知らせはありません
